@@ -1,0 +1,59 @@
+/* 轮播section专用样式 - 强制覆盖所有冲突样式 */
+.styles-background-carousel {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin: 60px 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+.lighting-background-carousel {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin: 60px 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+/* 确保轮播容器也是全高度 */
+.background-carousel-container,
+.lighting-carousel-container {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100vh !important;
+}
+
+/* 确保slide也是全高度 */
+.background-slide,
+.lighting-slide {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 0 !important;
+    transition: opacity 1s ease-in-out !important;
+}
+
+.background-slide.active,
+.lighting-slide.active {
+    opacity: 1 !important;
+}
+

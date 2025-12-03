@@ -1,0 +1,128 @@
+/* 按钮增强样式 - 适用于所有页面 */
+
+/* 表单提交按钮优化 */
+input[type="submit"],
+button[type="submit"],
+.submit-btn {
+    padding: 16px 35px !important;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%) !important;
+    color: white !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    min-width: 150px !important;
+    letter-spacing: 0.5px !important;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover,
+.submit-btn:hover {
+    background: linear-gradient(135deg, #333 0%, #555 100%) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 
+        0 12px 35px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+/* 链接按钮优化 */
+a.btn,
+.link-btn {
+    display: inline-block !important;
+    padding: 16px 35px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+/* 购物车按钮优化 */
+.cart-btn,
+.add-to-cart {
+    padding: 14px 30px !important;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    min-width: 140px !important;
+}
+
+.cart-btn:hover,
+.add-to-cart:hover {
+    background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3) !important;
+}
+
+/* 导航按钮优化 */
+.nav-btn,
+.navigation-btn {
+    padding: 12px 25px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+}
+
+.nav-btn:hover,
+.navigation-btn:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* 移动端按钮优化 */
+@media (max-width: 768px) {
+    .btn,
+    input[type="submit"],
+    button[type="submit"] {
+        padding: 14px 25px !important;
+        font-size: 1rem !important;
+        min-width: 120px !important;
+    }
+    
+    .hero-cta-btn {
+        padding: 18px 35px !important;
+        font-size: 1.1rem !important;
+        min-width: 180px !important;
+    }
+    
+    .lighting-detail-btn {
+        padding: 16px 30px !important;
+        font-size: 1rem !important;
+        min-width: 160px !important;
+    }
+}
+
+/* 小屏幕设备优化 */
+@media (max-width: 480px) {
+    .btn,
+    input[type="submit"],
+    button[type="submit"] {
+        padding: 12px 20px !important;
+        font-size: 0.95rem !important;
+        min-width: 100px !important;
+    }
+    
+    .hero-cta-btn {
+        padding: 16px 25px !important;
+        font-size: 1rem !important;
+        min-width: 150px !important;
+    }
+    
+    .lighting-detail-btn {
+        padding: 14px 25px !important;
+        font-size: 0.95rem !important;
+        min-width: 140px !important;
+    }
+}
+

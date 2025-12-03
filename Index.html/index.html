@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>SENSELITE - Bright up your life</title>
+    <link rel="stylesheet" href="css/style-new.css">
+    <link rel="stylesheet" href="css/carousel-fix.css">
+    <link rel="stylesheet" href="css/button-enhancements.css">
+    <meta name="description" content="SENSELITE - 专业灯饰设计与装修服务，20周年大促销，0%装修方案">
+    <meta name="keywords" content="灯饰,装修,照明,设计,SENSELITE">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+                </a>
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <a href="index.html" data-translate="home">首页</a>
+                    <a href="lighting-overview.html" data-translate="lighting">灯饰</a>
+                    <a href="promotion.html" data-translate="promotion">20th 周年大促销</a>
+                    <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+                    <a href="about.html" data-translate="about">关于我们</a>
+                    <a href="contact.html" data-translate="contact">联系我们</a>
+                    <a href="support.html" data-translate="support">技术支持</a>
+                    <a href="cart.html" data-translate="cart">购物车</a>
+                    <a href="member.html" data-translate="member">会员</a>
+                </nav>
+            </div>
+            
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageDropdown()">
+                    <span id="currentLanguage">中文</span> ▼
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('images/hero-banner.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-translate="hero-title">Bright up your life</h1>
+            <p data-translate="hero-subtitle">专业灯饰设计与装修服务</p>
+        </div>
+        <div class="hero-cta">
+            <a href="#" class="hero-btn" data-translate="hero-cta">0% 分期支付装修</a>
+        </div>
+    </section>
+
+    <!-- Design Styles Background Carousel -->
+    <section class="styles-background-carousel" id="styles-carousel">
+        <div class="background-carousel-container">
+            <div class="background-slide active" style="background-image: url('images/CB49BNdTKZaH.jpg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">现代简约</h3>
+                    <p class="slide-description">简洁线条，纯净色彩，营造舒适宁静的居住空间</p>
+                    <a href="styles/modern-minimalist.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/FQVUvBekWObC.jpeg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">北欧风格</h3>
+                    <p class="slide-description">自然材质，温暖色调，打造温馨舒适的家居环境</p>
+                    <a href="styles/nordic.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/SNmO037nAGni.jpg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">工业风格</h3>
+                    <p class="slide-description">原始材料，粗犷质感，展现独特的都市魅力</p>
+                    <a href="styles/industrial.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/8HGUmCYuKUOz.jpg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">中式古典</h3>
+                    <p class="slide-description">传统元素，文化底蕴，传承东方美学精髓</p>
+                    <a href="styles/chinese-classical.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/gSEZ6SrcSg9S.jpg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">欧式奢华</h3>
+                    <p class="slide-description">精致雕花，华丽装饰，彰显贵族气质</p>
+                    <a href="styles/european-luxury.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/P9qTqBIoI6O7.jpg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">美式乡村</h3>
+                    <p class="slide-description">自然朴实，温馨怀旧，享受田园生活情调</p>
+                    <a href="styles/american-country.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/6zlUVLkZjQJX.jpeg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">地中海风</h3>
+                    <p class="slide-description">蓝白色调，海洋元素，感受浪漫地中海风情</p>
+                    <a href="styles/mediterranean.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/CB49BNdTKZaH.jpg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">日式禅意</h3>
+                    <p class="slide-description">简约自然，禅意空间，追求内心的宁静平和</p>
+                    <a href="styles/japanese-zen.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/8HGUmCYuKUOz.jpg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">轻奢现代</h3>
+                    <p class="slide-description">精致细节，品质材料，演绎现代轻奢生活</p>
+                    <a href="styles/light-luxury.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+            <div class="background-slide" style="background-image: url('images/gSEZ6SrcSg9S.jpg');">
+                <div class="slide-content">
+                    <h3 class="slide-style-name">混搭风格</h3>
+                    <p class="slide-description">多元融合，个性表达，创造独一无二的空间</p>
+                    <a href="styles/eclectic.html" class="slide-detail-btn">查看详情</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional: Simple overlay text -->
+        <div class="carousel-overlay-text">
+            <h2 data-translate="styles-showcase">装修风格展示 • 现代简约 • 北欧风格 • 工业风格 • 中式古典 • 欧式奢华 • 美式乡村 • 地中海风 • 日式禅意 • 轻奢现代 • 混搭风格</h2>
+            <p data-translate="styles-subtitle">十大热门装修风格，每5秒为您展示不同设计灵感，专业团队为您量身定制理想家居</p>
+        </div>
+    </section>
+
+    <!-- 20th Anniversary Promotion Section with Cherry Blossoms -->
+    <section class="section promotion-section-sakura" id="promotion">
+  <!-- Section: 20周年促销 -->
+  <section class="promotion-hero">
+    <div class="slides">
+      <img src="images/sakura-background.jpeg" class="active">
+      <img src="images/sakura-background.jpeg">
+      <img src="images/sakura-background.jpeg">
+    </div>
+    <div class="promotion-content">
+      <h2>20 周年豪华大礼 · 总价值超 RM150,000</h2>
+      <p>庆典抽奖 · 现金礼券 · 东京 & 欧洲旅行</p>
+    </div>
+    <div class="sakura"></div>
+    
+    <!-- 礼品装饰区域 -->
+    <div class="gifts-decoration">
+      <div class="gift-item gift-1">
+        <img src="images/prize-osim.jpg" alt="Osim uNano Pro">
+      </div>
+      <div class="gift-item gift-2">
+        <img src="images/prize-samsung-tv.jpg" alt="Samsung 65寸电视">
+      </div>
+      <div class="gift-item gift-3">
+        <img src="images/prize-dyson-purifier.jpg" alt="Dyson空气净化器">
+      </div>
+      <div class="gift-item gift-4">
+        <img src="images/prize-ps5.jpg" alt="PlayStation 5">
+      </div>
+      <div class="gift-item gift-5">
+        <img src="images/prize-airwrap.jpg" alt="Dyson Airwrap">
+      </div>
+      <div class="gift-item gift-6">
+        <img src="images/prize-airstrait.jpg" alt="Dyson Airstrait">
+      </div>
+      <div class="gift-item gift-7">
+        <img src="images/prize-samsonite.jpg" alt="Samsonite行李箱">
+      </div>
+    </div>
+    
+    <!-- 圆形奖品卡片背景装饰 -->
+    <div class="prize-circles-bg">
+      <div class="prize-circle-bg prize-bg-1">
+        <div class="prize-circle-content">
+          <h4>现金礼券</h4>
+          <p class="prize-value">RM30,000+</p>
+        </div>
+      </div>
+      <div class="prize-circle-bg prize-bg-2">
+        <div class="prize-circle-content">
+          <h4>东京之旅</h4>
+          <p class="prize-value">满RM30k送</p>
+        </div>
+      </div>
+      <div class="prize-circle-bg prize-bg-3">
+        <div class="prize-circle-content">
+          <h4>欧洲双人游</h4>
+          <p class="prize-value">五天四夜</p>
+        </div>
+      </div>
+      <div class="prize-circle-bg prize-bg-4">
+        <div class="prize-circle-content">
+          <h4>豪华大奖</h4>
+          <p class="prize-value">等你来拿</p>
+        </div>
+      </div>
+      <div class="prize-circle-bg prize-bg-5">
+        <div class="prize-circle-content">
+          <h4>限时抽奖</h4>
+          <p class="prize-value">立即参与</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Lighting Categories Background Carousel -->
+    <section class="lighting-background-carousel" id="lighting-carousel">
+        <div class="lighting-carousel-container">
+            <div class="lighting-slide active" style="background-image: url('images/lighting-1.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="ceiling-lights">Ceiling Lights</h3>
+                    <a href="pages/lighting/ceiling.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-2.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="pendant-lights">Pendant Lights</h3>
+                    <a href="pages/lighting/pendant.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-3.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="wall-lights">Wall / Picture Lights</h3>
+                    <a href="pages/lighting/wall.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-4.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="table-floor-lamps">Table / Floor Lamps</h3>
+                    <a href="pages/lighting/table-floor.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-5.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="linear-fluorescent">Linear / Fluorescent</h3>
+                    <a href="pages/lighting/linear.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-6.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="recessed-downlight">Recessed Downlight / Spot</h3>
+                    <a href="pages/lighting/recessed.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-7.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="track-magnetic">Track / Magnetic</h3>
+                    <a href="pages/lighting/track.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-8.png');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="commercial-lighting">Commercial Lighting</h3>
+                    <a href="pages/lighting/commercial.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-9.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="outdoor-lighting">Outdoor Lighting</h3>
+                    <a href="pages/lighting/outdoor.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-10.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="water-heater">Water Heater</h3>
+                    <a href="pages/lighting/heater.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-11.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="fan">Fan</h3>
+                    <a href="pages/lighting/fan.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-1.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="switches">Switches</h3>
+                    <a href="pages/lighting/switches.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+            <div class="lighting-slide" style="background-image: url('images/lighting-2.jpeg');">
+                <div class="lighting-slide-content">
+                    <h3 class="lighting-category-title" data-translate="bulbs">Bulbs</h3>
+                    <a href="pages/lighting/bulbs.html" class="lighting-detail-btn" data-translate="discover-series">查看系列</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lighting Section Overlay Text -->
+        <div class="lighting-overlay-text">
+            <h2 data-translate="lighting-showcase">灯饰产品系列 • 吸顶灯 • 吊灯 • 壁灯 • 台灯落地灯 • 线性荧光灯 • 嵌入式射灯 • 轨道磁吸灯 • 商业照明 • 户外照明 • 热水器 • 风扇 • 开关 • 灯泡</h2>
+            <p data-translate="lighting-subtitle">13大产品分类，每5秒为您展示不同照明解决方案，专业团队为您打造完美光环境</p>
+        </div>
+        
+        <!-- Remove the central overlay text -->
+    </section>
+
+    <!-- About Us Section - Modern Banner Style -->
+<section class="about-banner-section" id="about">
+  <div class="about-banner-container">
+    <!-- Left Content Area -->
+    <div class="about-content-left">
+      <div class="about-brand-logo">
+        <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+      </div>
+      
+      <h2 class="about-main-title lang" data-lang="zh">关于我们</h2>
+      <h2 class="about-main-title lang" data-lang="en" style="display:none;">About Us</h2>
+      <h2 class="about-main-title lang" data-lang="ms" style="display:none;">Tentang Kami</h2>
+      
+      <div class="about-info-item">
+        <div class="about-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="about-info-content">
+          <h4 class="lang" data-lang="zh">品牌理念</h4>
+          <h4 class="lang" data-lang="en" style="display:none;">Brand Philosophy</h4>
+          <h4 class="lang" data-lang="ms" style="display:none;">Falsafah Jenama</h4>
+          <p class="lang" data-lang="zh">极简 · 光影 · 生活</p>
+          <p class="lang" data-lang="en" style="display:none;">Minimal · Light · Life</p>
+          <p class="lang" data-lang="ms" style="display:none;">Minimal · Cahaya · Kehidupan</p>
+        </div>
+      </div>
+      
+      <div class="about-info-item">
+        <div class="about-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <div class="about-info-content">
+          <h4 class="lang" data-lang="zh">专业服务</h4>
+          <h4 class="lang" data-lang="en" style="display:none;">Professional Service</h4>
+          <h4 class="lang" data-lang="ms" style="display:none;">Perkhidmatan Profesional</h4>
+          <p class="lang" data-lang="zh">高端灯饰与智能家居解决方案</p>
+          <p class="lang" data-lang="en" style="display:none;">Premium lighting & smart home solutions</p>
+          <p class="lang" data-lang="ms" style="display:none;">Pencahayaan premium & penyelesaian rumah pintar</p>
+        </div>
+      </div>
+      
+      <div class="about-info-item">
+        <div class="about-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5.03 7.03 1 12 1S21 5.03 21 10Z" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <div class="about-info-content">
+          <h4 class="lang" data-lang="zh">服务范围</h4>
+          <h4 class="lang" data-lang="en" style="display:none;">Service Area</h4>
+          <h4 class="lang" data-lang="ms" style="display:none;">Kawasan Perkhidmatan</h4>
+          <p class="lang" data-lang="zh">马来西亚全国 · 专业团队上门服务</p>
+          <p class="lang" data-lang="en" style="display:none;">Nationwide Malaysia · Professional on-site service</p>
+          <p class="lang" data-lang="ms" style="display:none;">Seluruh Malaysia · Perkhidmatan profesional di tapak</p>
+        </div>
+      </div>
+      
+      <div class="about-info-item">
+        <div class="about-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <div class="about-info-content">
+          <h4 class="lang" data-lang="zh">联系我们</h4>
+          <h4 class="lang" data-lang="en" style="display:none;">Contact Us</h4>
+          <h4 class="lang" data-lang="ms" style="display:none;">Hubungi Kami</h4>
+          <p>info@senselite.com</p>
+        </div>
+      </div>
+      
+      <a href="about.html" class="about-cta-btn lang" data-lang="zh">了解更多</a>
+      <a href="about.html" class="about-cta-btn lang" data-lang="en" style="display:none;">Learn More</a>
+      <a href="about.html" class="about-cta-btn lang" data-lang="ms" style="display:none;">Ketahui Lebih Lanjut</a>
+    </div>
+    
+    <!-- Right Image Collage Area -->
+    <div class="about-images-right">
+      <div class="about-image-grid">
+        <div class="about-image-item about-image-large">
+          <img src="images/about-project-1.jpg" alt="现代简约厨房照明设计">
+        </div>
+        <div class="about-image-item about-image-small">
+          <img src="images/about-project-2.jpg" alt="开放式客厅线性照明">
+        </div>
+        <div class="about-image-item about-image-small">
+          <img src="images/about-project-3.jpg" alt="奢华客厅大理石背景墙照明">
+        </div>
+        <div class="about-image-item about-image-medium">
+          <img src="images/about-project-4.jpg" alt="温暖木质调嵌入式照明">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer - 奢华精美设计 -->
+<!-- ============================= -->
+<!-- 页脚 (Footer 全站统一) -->
+<!-- ============================= -->
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- 第一列 -->
+    <div class="footer-column">
+      <h3 class="lang" data-lang="zh">灯饰产品系列</h3>
+      <h3 class="lang" data-lang="en" style="display:none;">Lighting Series</h3>
+      <h3 class="lang" data-lang="ms" style="display:none;">Siri Pencahayaan</h3>
+      <ul>
+        <li><a href="lighting-ceiling.html" class="lang" data-lang="zh">吸顶灯</a>
+            <a href="lighting-ceiling.html" class="lang" data-lang="en" style="display:none;">Ceiling Lights</a>
+            <a href="lighting-ceiling.html" class="lang" data-lang="ms" style="display:none;">Lampu Siling</a></li>
+        <li><a href="promotion.html" class="lang" data-lang="zh">20周年福利</a>
+            <a href="promotion.html" class="lang" data-lang="en" style="display:none;">20th Anniversary</a>
+            <a href="promotion.html" class="lang" data-lang="ms" style="display:none;">Ulang Tahun ke-20</a></li>
+        <li><a href="about.html" class="lang" data-lang="zh">关于我们</a>
+            <a href="about.html" class="lang" data-lang="en" style="display:none;">About Us</a>
+            <a href="about.html" class="lang" data-lang="ms" style="display:none;">Tentang Kami</a></li>
+        <li><a href="store-locator.html" class="lang" data-lang="zh">门店查询</a>
+            <a href="store-locator.html" class="lang" data-lang="en" style="display:none;">Store Locator</a>
+            <a href="store-locator.html" class="lang" data-lang="ms" style="display:none;">Cari Kedai</a></li>
+      </ul>
+    </div>
+
+    <!-- 第二列 -->
+    <div class="footer-column">
+      <h3 class="lang" data-lang="zh">服务与工具</h3>
+      <h3 class="lang" data-lang="en" style="display:none;">Services & Tools</h3>
+      <h3 class="lang" data-lang="ms" style="display:none;">Perkhidmatan & Alat</h3>
+      <ul>
+        <li><a href="renovation.html" class="lang" data-lang="zh">0% 装修 + 赚钱</a>
+            <a href="renovation.html" class="lang" data-lang="en" style="display:none;">0% Renovation</a>
+            <a href="renovation.html" class="lang" data-lang="ms" style="display:none;">Pengubahsuaian 0%</a></li>
+        <li><a href="style-modern.html" class="lang" data-lang="zh">10大装修风格</a>
+            <a href="style-modern.html" class="lang" data-lang="en" style="display:none;">Top 10 Styles</a>
+            <a href="style-modern.html" class="lang" data-lang="ms" style="display:none;">10 Gaya Popular</a></li>
+        <li><a href="profit-calculator.html" class="lang" data-lang="zh">利润回报计算器</a>
+            <a href="profit-calculator.html" class="lang" data-lang="en" style="display:none;">Profit Calculator</a>
+            <a href="profit-calculator.html" class="lang" data-lang="ms" style="display:none;">Kalkulator Pulangan</a></li>
+        <li><a href="promotion.html" class="lang" data-lang="zh">福利满满</a>
+            <a href="promotion.html" class="lang" data-lang="en" style="display:none;">Exclusive Rewards</a>
+            <a href="promotion.html" class="lang" data-lang="ms" style="display:none;">Ganjaran Eksklusif</a></li>
+      </ul>
+    </div>
+
+    <!-- 第三列 -->
+    <div class="footer-column">
+      <h3 class="lang" data-lang="zh">支持与会员</h3>
+      <h3 class="lang" data-lang="en" style="display:none;">Support & Membership</h3>
+      <h3 class="lang" data-lang="ms" style="display:none;">Sokongan & Keahlian</h3>
+      <ul>
+        <li><a href="support.html" class="lang" data-lang="zh">技术支持</a>
+            <a href="support.html" class="lang" data-lang="en" style="display:none;">Technical Support</a>
+            <a href="support.html" class="lang" data-lang="ms" style="display:none;">Sokongan Teknikal</a></li>
+        <li><a href="payment-support.html" class="lang" data-lang="zh">付款支持</a>
+            <a href="payment-support.html" class="lang" data-lang="en" style="display:none;">Payment Support</a>
+            <a href="payment-support.html" class="lang" data-lang="ms" style="display:none;">Sokongan Pembayaran</a></li>
+        <li><a href="member.html" class="lang" data-lang="zh">会员注册/登录</a>
+            <a href="member.html" class="lang" data-lang="en" style="display:none;">Membership</a>
+            <a href="member.html" class="lang" data-lang="ms" style="display:none;">Keahlian</a></li>
+        <li><a href="contact.html" class="lang" data-lang="zh">联系我们</a>
+            <a href="contact.html" class="lang" data-lang="en" style="display:none;">Contact Us</a>
+            <a href="contact.html" class="lang" data-lang="ms" style="display:none;">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 底部版权 -->
+  <div class="footer-bottom">
+    <p>© 2025 SENSELITE | Bright up your life</p>
+  </div>
+</footer>
+
+
+<!-- ============================= -->
+<!-- 样式 (精美极简 Occhio 风格) -->
+<!-- ============================= -->
+<style>
+.site-footer {
+  background: #111;
+  color: #eee;
+  padding: 60px 10% 30px;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+.footer-column ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #bbb;
+  transition: 0.3s;
+}
+.footer-column ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+</style>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+  <!-- JS: 轮播切换 & 樱花生成 -->
+  <script>
+    // 轮播切换
+    const slides = document.querySelectorAll(".slides img");
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 5000);
+
+    // 樱花飘落
+    function createPetal(){
+      const petal = document.createElement("div");
+      petal.classList.add("petal");
+      petal.style.left = Math.random() * 100 + "vw";
+      petal.style.animationDuration = 10 + Math.random() * 5 + "s";
+      document.querySelector(".sakura").appendChild(petal);
+      setTimeout(()=>petal.remove(), 15000);
+    }
+    setInterval(createPetal, 500);
+  </script>
+
+
+<!-- ============================= -->
+<!-- 语言切换 JS (全局可复用) -->
+<!-- ============================= -->
+<script>
+function switchLanguage(lang) {
+  document.querySelectorAll('.lang').forEach(el => {
+    el.style.display = (el.dataset.lang === lang) ? '' : 'none';
+  });
+}
+</script>
