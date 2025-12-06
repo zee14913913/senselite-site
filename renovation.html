@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0% 装修 + 赚钱 - SENSELITE</title>
+    <link rel="stylesheet" href="css/style-new.css">
+    <link rel="stylesheet" href="css/renovation-styles.css">
+    <meta name="description" content="SENSELITE 0%装修金融分期方案，让您轻松装修，还能赚钱">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+                </a>
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <a href="index.html" data-translate="home">首页</a>
+                    <a href="lighting-overview.html" data-translate="lighting">灯饰</a>
+                    <a href="promotion.html" data-translate="promotion">18th 周年大促销</a>
+                    <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+                    <a href="about.html" data-translate="about">关于我们</a>
+                    <a href="contact.html" data-translate="contact">联系我们</a>
+                    <a href="support.html" data-translate="support">技术支持</a>
+                    <a href="cart.html" data-translate="cart">购物车</a>
+                    <a href="member.html" data-translate="member">会员</a>
+                </nav>
+            </div>
+            
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageDropdown()">
+                    <span id="currentLanguage">中文</span> ▼
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/CB49BNdTKZaH.jpg');">
+        <div class="hero-content">
+            <h1>0% 装修 + 赚钱方案</h1>
+            <p>革命性金融分期计划，让装修变成投资</p>
+            <a href="#calculator" class="btn">立即计算</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section" id="introduction">
+        <div class="container">
+            <div class="fade-in" style="text-align: center; margin-bottom: 50px;">
+                <h2>为什么选择我们的0%装修方案？</h2>
+                <p style="font-size: 1.2rem; color: var(--dark-gray); max-width: 800px; margin: 0 auto;">
+                    SENSELITE独创的0%装修+赚钱方案，不仅让您零利息装修，还能通过我们的投资回报计划获得额外收益
+                </p>
+            </div>
+            
+            <div class="grid grid-3 fade-in">
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; color: var(--silver); margin-bottom: 20px;">0%</div>
+                        <h3>零利息装修</h3>
+                        <p>24个月内0%利息分期付款，减轻您的经济负担</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; color: var(--silver); margin-bottom: 20px;">💰</div>
+                        <h3>投资回报</h3>
+                        <p>通过我们的合作伙伴投资计划，获得年化5-8%的稳定回报</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; color: var(--silver); margin-bottom: 20px;">🏠</div>
+                        <h3>专业服务</h3>
+                        <p>20年装修经验，一站式服务，品质保证</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section" style="background-color: var(--pearl-white);" id="how-it-works">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 50px;">服务流程</h2>
+            
+            <div class="fade-in">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                    <!-- Step 1 -->
+                    <div style="flex: 1; min-width: 200px; text-align: center;">
+                        <div style="width: 80px; height: 80px; background-color: var(--primary-black); color: var(--primary-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; margin: 0 auto 20px;">1</div>
+                        <h4>免费咨询</h4>
+                        <p style="color: var(--dark-gray);">专业设计师上门测量，提供装修建议</p>
+                    </div>
+                    
+                    <!-- Arrow -->
+                    <div style="font-size: 2rem; color: var(--silver);">→</div>
+                    
+                    <!-- Step 2 -->
+                    <div style="flex: 1; min-width: 200px; text-align: center;">
+                        <div style="width: 80px; height: 80px; background-color: var(--primary-black); color: var(--primary-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; margin: 0 auto 20px;">2</div>
+                        <h4>定制方案</h4>
+                        <p style="color: var(--dark-gray);">根据需求制定个性化装修和金融方案</p>
+                    </div>
+                    
+                    <!-- Arrow -->
+                    <div style="font-size: 2rem; color: var(--silver);">→</div>
+                    
+                    <!-- Step 3 -->
+                    <div style="flex: 1; min-width: 200px; text-align: center;">
+                        <div style="width: 80px; height: 80px; background-color: var(--primary-black); color: var(--primary-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; margin: 0 auto 20px;">3</div>
+                        <h4>金融匹配</h4>
+                        <p style="color: var(--dark-gray);">匹配最适合的金融机构和投资产品</p>
+                    </div>
+                    
+                    <!-- Arrow -->
+                    <div style="font-size: 2rem; color: var(--silver);">→</div>
+                    
+                    <!-- Step 4 -->
+                    <div style="flex: 1; min-width: 200px; text-align: center;">
+                        <div style="width: 80px; height: 80px; background-color: var(--primary-black); color: var(--primary-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; margin: 0 auto 20px;">4</div>
+                        <h4>开始施工</h4>
+                        <p style="color: var(--dark-gray);">专业团队施工，严格质量控制</p>
+                    </div>
+                    
+                    <!-- Arrow -->
+                    <div style="font-size: 2rem; color: var(--silver);">→</div>
+                    
+                    <!-- Step 5 -->
+                    <div style="flex: 1; min-width: 200px; text-align: center;">
+                        <div style="width: 80px; height: 80px; background-color: var(--primary-black); color: var(--primary-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; margin: 0 auto 20px;">5</div>
+                        <h4>完工交付</h4>
+                        <p style="color: var(--dark-gray);">验收交付，开始享受投资回报</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="section" id="calculator">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 50px;">利润回报计算器</h2>
+            
+            <div class="grid grid-2 fade-in">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>输入您的装修预算</h3>
+                        <form id="profit-calculator">
+                            <div style="margin-bottom: 20px;">
+                                <label for="budget" style="display: block; margin-bottom: 5px; font-weight: bold;">装修预算 (RM)</label>
+                                <input type="number" id="budget" name="budget" min="10000" max="500000" value="50000" 
+                                       style="width: 100%; padding: 10px; border: 1px solid var(--medium-gray); border-radius: 5px; font-size: 1rem;">
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label for="period" style="display: block; margin-bottom: 5px; font-weight: bold;">投资期限</label>
+                                <select id="period" name="period" 
+                                        style="width: 100%; padding: 10px; border: 1px solid var(--medium-gray); border-radius: 5px; font-size: 1rem;">
+                                    <option value="12">12个月</option>
+                                    <option value="24" selected>24个月</option>
+                                    <option value="36">36个月</option>
+                                </select>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label for="return-rate" style="display: block; margin-bottom: 5px; font-weight: bold;">预期年化回报率</label>
+                                <select id="return-rate" name="return-rate" 
+                                        style="width: 100%; padding: 10px; border: 1px solid var(--medium-gray); border-radius: 5px; font-size: 1rem;">
+                                    <option value="5">5% (保守型)</option>
+                                    <option value="6.5" selected>6.5% (稳健型)</option>
+                                    <option value="8">8% (积极型)</option>
+                                </select>
+                            </div>
+                            
+                            <button type="button" onclick="calculateProfit()" class="btn" style="width: 100%;">计算收益</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>预期收益结果</h3>
+                        <div id="calculation-result">
+                            <div style="background-color: var(--light-gray); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                                <h4>装修投资：<span id="result-budget">RM 50,000</span></h4>
+                                <h4>投资期限：<span id="result-period">24个月</span></h4>
+                                <h4>年化回报：<span id="result-rate">6.5%</span></h4>
+                            </div>
+                            
+                            <div style="background-color: var(--primary-black); color: var(--primary-white); padding: 20px; border-radius: 10px; text-align: center;">
+                                <h3 style="color: var(--primary-white); margin-bottom: 10px;">总收益</h3>
+                                <div style="font-size: 2rem; font-weight: bold;" id="total-profit">RM 6,500</div>
+                                <p style="margin-top: 10px;">您的装修不仅免费，还能赚钱！</p>
+                            </div>
+                            
+                            <div style="margin-top: 20px; font-size: 0.9rem; color: var(--dark-gray);">
+                                <p>* 以上计算仅供参考，实际收益可能因市场情况而有所不同</p>
+                                <p>* 投资有风险，请谨慎决策</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section" style="background-color: var(--pearl-white);" id="benefits">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 50px;">方案优势</h2>
+            
+            <div class="grid grid-2 fade-in">
+                <div class="slide-in-left">
+                    <h3>金融优势</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 15px;">
+                            <span style="color: var(--silver); font-size: 1.2rem;">✓</span>
+                            <strong>0%利息分期：</strong>24个月内无需支付任何利息
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <span style="color: var(--silver); font-size: 1.2rem;">✓</span>
+                            <strong>灵活还款：</strong>可根据收入情况调整还款计划
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <span style="color: var(--silver); font-size: 1.2rem;">✓</span>
+                            <strong>投资回报：</strong>年化5-8%稳定收益
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <span style="color: var(--silver); font-size: 1.2rem;">✓</span>
+                            <strong>风险保障：</strong>合作金融机构提供风险保障
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="slide-in-right">
+                    <h3>服务优势</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 15px;">
+                            <span style="color: var(--silver); font-size: 1.2rem;">✓</span>
+                            <strong>18年经验：</strong>专业装修团队，品质保证
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <span style="color: var(--silver); font-size: 1.2rem;">✓</span>
+                            <strong>一站式服务：</strong>从设计到施工全程负责
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <span style="color: var(--silver); font-size: 1.2rem;">✓</span>
+                            <strong>质量保修：</strong>5年质量保修，终身维护
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <span style="color: var(--silver); font-size: 1.2rem;">✓</span>
+                            <strong>透明报价：</strong>无隐藏费用，价格透明
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--primary-black); color: var(--primary-white);">
+        <div class="container">
+            <div class="fade-in" style="text-align: center;">
+                <h2 style="color: var(--primary-white);">立即开始您的0%装修之旅</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 30px;">免费咨询，专业设计，让装修变成投资</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="#contact" class="btn btn-secondary">免费咨询</a>
+                    <a href="index.html#contact" class="btn">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>产品与服务</h4>
+                    <ul>
+                        <li><a href="index.html#lighting">灯饰产品系列</a></li>
+                        <li><a href="promotion.html">18th 周年福利</a></li>
+                        <li><a href="index.html#about">关于我们</a></li>
+                        <li><a href="index.html#contact">门店查询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>装修服务</h4>
+                    <ul>
+                        <li><a href="renovation.html">0% 装修 + 赚钱</a></li>
+                        <li><a href="index.html#styles">10 大最受欢迎风格</a></li>
+                        <li><a href="renovation.html">利润回报计算器</a></li>
+                        <li><a href="promotion.html">福利满满</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="support.html">技术支持</a></li>
+                        <li><a href="payment-support.html">付款支持</a></li>
+                        <li><a href="member.html">会员注册/登录</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column -->
+                <div class="footer-column">
+                    <h4>联系信息</h4>
+                    <ul>
+                        <li><a href="tel:+60123456789">电话: +60 12-345 6789</a></li>
+                        <li><a href="mailto:info@senselite.com">邮箱: info@senselite.com</a></li>
+                        <li><a href="#">地址: 吉隆坡市中心</a></li>
+                        <li><a href="#">营业时间: 9:00-18:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SENSELITE. All rights reserved. | Bright up your life</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function calculateProfit() {
+            const budget = parseFloat(document.getElementById('budget').value);
+            const period = parseInt(document.getElementById('period').value);
+            const rate = parseFloat(document.getElementById('return-rate').value);
+            
+            // Calculate profit
+            const annualProfit = budget * (rate / 100);
+            const totalProfit = annualProfit * (period / 12);
+            
+            // Update display
+            document.getElementById('result-budget').textContent = `RM ${budget.toLocaleString()}`;
+            document.getElementById('result-period').textContent = `${period}个月`;
+            document.getElementById('result-rate').textContent = `${rate}%`;
+            document.getElementById('total-profit').textContent = `RM ${Math.round(totalProfit).toLocaleString()}`;
+        }
+        
+        // Initialize calculator
+        document.addEventListener('DOMContentLoaded', function() {
+            calculateProfit();
+        });
+    </script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'senselite-c7h48z',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-s2_xi-L0.js" async></script><script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script></body>
+</html>
+
