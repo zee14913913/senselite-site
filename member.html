@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>会员中心 - SENSELITE</title>
+    <link rel="stylesheet" href="css/style-new.css">
+    <meta name="description" content="SENSELITE - 会员中心，专业灯饰设计与装修服务">
+    <meta name="keywords" content="灯饰,装修,照明,设计,SENSELITE,会员中心">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+                </a>
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <a href="index.html" data-translate="home">首页</a>
+                    <a href="index.html#lighting" data-translate="lighting">灯饰</a>
+                    <a href="promotion.html" data-translate="promotion">20th 周年大促销</a>
+                    <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+                    <a href="about.html" data-translate="about">关于我们</a>
+                    <a href="contact.html" data-translate="contact">联系我们</a>
+                    <a href="support.html" data-translate="support">技术支持</a>
+                    <a href="cart.html" data-translate="cart">购物车</a>
+                    <a href="member.html" data-translate="member">会员</a>
+                </nav>
+            </div>
+            
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageDropdown()">
+                    <span id="currentLanguage">中文</span> ▼
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <style>
+    body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 2.5rem;
+        text-shadow: 0 0 8px rgba(255,255,255,0.6);
+        color: #333;
+    }
+    .member-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 40px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .login-form, .register-form {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
+    }
+    .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    .btn {
+        background: #333;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 10px 5px;
+    }
+    .btn:hover {
+        background: #555;
+    }
+    .member-benefits {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+    }
+    .benefit-card {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        border-left: 4px solid #333;
+    }
+    </style>
+
+    <main>
+        <h1>会员中心</h1>
+        
+        <div class="member-container">
+            <div class="login-form">
+                <h3>会员登录</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="username">用户名/邮箱</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">登录</button>
+                    <button type="button" class="btn" style="background: #666;">忘记密码</button>
+                </form>
+            </div>
+
+            <div class="register-form">
+                <h3>新用户注册</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="reg-name">姓名</label>
+                        <input type="text" id="reg-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">邮箱</label>
+                        <input type="email" id="reg-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-phone">电话</label>
+                        <input type="tel" id="reg-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">密码</label>
+                        <input type="password" id="reg-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn">注册</button>
+                </form>
+            </div>
+
+            <div class="member-benefits">
+                <div class="benefit-card">
+                    <h4>🎁 专属优惠</h4>
+                    <p>会员专享折扣和促销活动</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>🚚 免费配送</h4>
+                    <p>满额免费送货上门服务</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>🔧 优先服务</h4>
+                    <p>安装维修服务优先预约</p>
+                </div>
+                <div class="benefit-card">
+                    <h4>📞 专属客服</h4>
+                    <p>会员专线客服支持</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- First Column -->
+                <div class="footer-column">
+                    <h4>产品与服务</h4>
+                    <ul>
+                        <li><a href="index.html#lighting">灯饰产品系列</a></li>
+                        <li><a href="promotion.html">20th 周年福利</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">门店查询</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Second Column -->
+                <div class="footer-column">
+                    <h4>装修服务</h4>
+                    <ul>
+                        <li><a href="renovation.html">0% 装修 + 赚钱</a></li>
+                        <li><a href="index.html#styles">10 大最受欢迎风格</a></li>
+                        <li><a href="renovation.html">利润回报计算器</a></li>
+                        <li><a href="promotion.html">福利满满</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column -->
+                <div class="footer-column">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="support.html">技术支持</a></li>
+                        <li><a href="support.html">付款支持</a></li>
+                        <li><a href="member.html">会员注册/登录</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column -->
+                <div class="footer-column">
+                    <h4>联系信息</h4>
+                    <ul>
+                        <li><a href="tel:+60123456789">电话: +60 12-345 6789</a></li>
+                        <li><a href="mailto:info@senselite.com">邮箱: info@senselite.com</a></li>
+                        <li><a href="#">地址: 吉隆坡市中心</a></li>
+                        <li><a href="#">营业时间: 9:00-18:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SENSELITE. All rights reserved. | Bright up your life</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'senselite-c7h48z',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-s2_xi-L0.js" async></script><script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script></body>
+</html>
