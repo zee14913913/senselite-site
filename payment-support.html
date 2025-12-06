@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>付款支持 - SENSELITE</title>
+    <link rel="stylesheet" href="css/style-new.css">
+    <meta name="description" content="SENSELITE - 付款支持，专业灯饰设计与装修服务">
+    <meta name="keywords" content="灯饰,装修,照明,设计,SENSELITE,付款支持">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+                </a>
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <a href="index.html" data-translate="home">首页</a>
+                    <a href="index.html#lighting" data-translate="lighting">灯饰</a>
+                    <a href="promotion.html" data-translate="promotion">20th 周年大促销</a>
+                    <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+                    <a href="about.html" data-translate="about">关于我们</a>
+                    <a href="contact.html" data-translate="contact">联系我们</a>
+                    <a href="support.html" data-translate="support">技术支持</a>
+                    <a href="cart.html" data-translate="cart">购物车</a>
+                    <a href="member.html" data-translate="member">会员</a>
+                </nav>
+            </div>
+            
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageDropdown()">
+                    <span id="currentLanguage">中文</span> ▼
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <style>
+    body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 2.5rem;
+        text-shadow: 0 0 8px rgba(255,255,255,0.6);
+        color: #333;
+    }
+    .payment-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 40px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .payment-section {
+        margin-bottom: 40px;
+    }
+    .payment-section h2 {
+        color: #333;
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+    .payment-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    .payment-section li {
+        background: #f8f9fa;
+        margin: 10px 0;
+        padding: 15px 20px;
+        border-radius: 8px;
+        border-left: 4px solid #333;
+        font-size: 1.1rem;
+    }
+    .payment-section p {
+        line-height: 1.6;
+        color: #555;
+        font-size: 1.1rem;
+        margin: 15px 0;
+    }
+    </style>
+
+    <!-- 付款支持内容 -->
+    <main>
+        <h1>付款支持</h1>
+        <div class="payment-container">
+            <section class="payment-section">
+                <h2>支持的付款方式</h2>
+                <ul>
+                    <li>💳 信用卡（Visa / Master / Amex）</li>
+                    <li>🏦 FPX 网银转账</li>
+                    <li>📱 电子钱包（Touch'n Go, GrabPay, Boost）</li>
+                    <li>💰 分期付款计划（0% 最长 60 个月）</li>
+                </ul>
+            </section>
+
+            <section class="payment-section">
+                <h2>发票与退款</h2>
+                <p>📧 购买后系统会自动生成电子发票并发送到您的邮箱。</p>
+                <p>🔄 退款需联系客服审核，7–14 个工作日到账。</p>
+                <p>📞 如有付款问题，请联系客服热线：+60 12-345 6789</p>
+            </section>
+
+            <section class="payment-section">
+                <h2>安全保障</h2>
+                <p>🔒 我们使用SSL加密技术保护您的付款信息安全。</p>
+                <p>🛡️ 所有交易均通过银行级别的安全系统处理。</p>
+                <p>✅ 支持多种安全认证方式，确保交易安全可靠。</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- First Column -->
+                <div class="footer-column">
+                    <h4>产品与服务</h4>
+                    <ul>
+                        <li><a href="index.html#lighting">灯饰产品系列</a></li>
+                        <li><a href="promotion.html">20th 周年福利</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">门店查询</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Second Column -->
+                <div class="footer-column">
+                    <h4>装修服务</h4>
+                    <ul>
+                        <li><a href="renovation.html">0% 装修 + 赚钱</a></li>
+                        <li><a href="index.html#styles">10 大最受欢迎风格</a></li>
+                        <li><a href="renovation.html">利润回报计算器</a></li>
+                        <li><a href="promotion.html">福利满满</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column -->
+                <div class="footer-column">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="support.html">技术支持</a></li>
+                        <li><a href="payment-support.html">付款支持</a></li>
+                        <li><a href="member.html">会员注册/登录</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column -->
+                <div class="footer-column">
+                    <h4>联系信息</h4>
+                    <ul>
+                        <li><a href="tel:+60123456789">电话: +60 12-345 6789</a></li>
+                        <li><a href="mailto:info@senselite.com">邮箱: info@senselite.com</a></li>
+                        <li><a href="#">地址: 吉隆坡市中心</a></li>
+                        <li><a href="#">营业时间: 9:00-18:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SENSELITE. All rights reserved. | Bright up your life</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'senselite-c7h48z',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-s2_xi-L0.js" async></script><script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script></body>
+</html>
