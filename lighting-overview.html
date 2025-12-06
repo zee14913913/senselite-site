@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>灯饰产品系列 | SENSELITE</title>
+  <link rel="stylesheet" href="css/style-new.css">
+  <link rel="stylesheet" href="css/occhio-style.css">
+  <style>
+    /* Hero Banner */
+    .hero-banner {
+      background: url('images/lighting-hero.jpg') no-repeat center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-banner h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 0 0 12px rgba(255,255,255,0.6);
+    }
+    .hero-banner p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    /* 分类网格 */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 60px 10%;
+      background: #f8f9fa;
+    }
+    .category-card {
+      background: white;
+      border: 1px solid #ddd;
+      text-align: center;
+      transition: all 0.3s ease;
+      padding: 20px;
+    }
+    .category-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .category-card img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .category-card h3 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .category-card p {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 15px;
+    }
+    .category-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+    .category-card a:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+        </a>
+      </div>
+      
+      <div class="nav-container">
+        <nav>
+          <a href="index.html" data-translate="home">首页</a>
+          <a href="lighting-overview.html" data-translate="lighting" class="active">灯饰</a>
+          <a href="promotion.html" data-translate="promotion">20th 周年大促销</a>
+          <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+          <a href="about.html" data-translate="about">关于我们</a>
+          <a href="contact.html" data-translate="contact">联系我们</a>
+          <a href="support.html" data-translate="support">技术支持</a>
+          <a href="cart.html" data-translate="cart">购物车</a>
+          <a href="member.html" data-translate="member">会员</a>
+        </nav>
+      </div>
+      
+      <div class="language-switcher">
+        <button class="language-btn" onclick="toggleLanguageDropdown()">
+          <span id="currentLanguage">中文</span> ▼
+        </button>
+        <div class="language-dropdown" id="languageDropdown">
+          <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+          <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+          <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <h1>灯饰产品系列</h1>
+    <p>找到最适合你家的光</p>
+  </section>
+
+  <!-- 分类展示 -->
+  <section class="categories">
+    <div class="category-card">
+      <img src="images/ceiling.jpg" alt="Ceiling Lights">
+      <h3>吸顶灯 / Ceiling Lights</h3>
+      <p>简约实用，适合各种空间</p>
+      <a href="lighting-ceiling.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/pendant.jpg" alt="Pendant Lights">
+      <h3>吊灯 / Pendant Lights</h3>
+      <p>时尚吊挂设计，打造空间焦点</p>
+      <a href="lighting-pendant.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/wall.jpg" alt="Wall Lights">
+      <h3>壁灯 / Wall Lights</h3>
+      <p>点亮墙面，增添氛围感</p>
+      <a href="lighting-wall.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/table.jpg" alt="Table Lamps">
+      <h3>台灯 & 落地灯</h3>
+      <p>便携照明，灵活使用</p>
+      <a href="lighting-table.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/linear.jpg" alt="Linear Lighting">
+      <h3>线性灯 / Linear</h3>
+      <p>现代设计，适合办公与家居</p>
+      <a href="lighting-linear.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/recessed.jpg" alt="Recessed Lights">
+      <h3>筒灯 / Recessed</h3>
+      <p>隐形光源，简约干净</p>
+      <a href="lighting-recessed.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/track.jpg" alt="Track Lights">
+      <h3>轨道灯 / Track</h3>
+      <p>灵活调节，精准照明</p>
+      <a href="lighting-track.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/commercial.jpg" alt="Commercial Lights">
+      <h3>商用灯 / Commercial</h3>
+      <p>专业光源，商用空间必备</p>
+      <a href="lighting-commercial.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/outdoor.jpg" alt="Outdoor Lights">
+      <h3>户外灯 / Outdoor</h3>
+      <p>防水耐用，户外空间照明</p>
+      <a href="lighting-outdoor.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/heater.jpg" alt="Water Heater">
+      <h3>热水器 / Heater</h3>
+      <p>舒适生活必备</p>
+      <a href="lighting-heater.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/fan.jpg" alt="Fans">
+      <h3>风扇 / Fans</h3>
+      <p>清凉舒适，节能高效</p>
+      <a href="lighting-fan.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/switches.jpg" alt="Switches">
+      <h3>开关 / Switches</h3>
+      <p>智能控制，方便操作</p>
+      <a href="lighting-switches.html">进入分类</a>
+    </div>
+    <div class="category-card">
+      <img src="images/bulbs.jpg" alt="Bulbs">
+      <h3>灯泡 / Bulbs</h3>
+      <p>基础光源，节能环保</p>
+      <a href="lighting-bulbs.html">进入分类</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <!-- First Column -->
+        <div class="footer-column">
+          <h4>产品与服务</h4>
+          <ul>
+            <li><a href="lighting-overview.html">灯饰产品系列</a></li>
+            <li><a href="promotion.html">20th 周年福利</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">门店查询</a></li>
+          </ul>
+        </div>
+        
+        <!-- Second Column -->
+        <div class="footer-column">
+          <h4>装修服务</h4>
+          <ul>
+            <li><a href="renovation.html">0% 装修 + 赚钱</a></li>
+            <li><a href="styles.html">10 大最受欢迎风格</a></li>
+            <li><a href="profit-calculator.html">利润回报计算器</a></li>
+            <li><a href="promotion.html">福利满满</a></li>
+          </ul>
+        </div>
+        
+        <!-- Third Column -->
+        <div class="footer-column">
+          <h4>客户服务</h4>
+          <ul>
+            <li><a href="support.html">技术支持</a></li>
+            <li><a href="payment-support.html">付款支持</a></li>
+            <li><a href="member.html">会员注册/登录</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        
+        <!-- Fourth Column -->
+        <div class="footer-column">
+          <h4>联系信息</h4>
+          <ul>
+            <li><a href="tel:+60123456789">电话: +60 12-345 6789</a></li>
+            <li><a href="mailto:info@senselite.com">邮箱: info@senselite.com</a></li>
+            <li><a href="#">地址: 吉隆坡市中心</a></li>
+            <li><a href="#">营业时间: 9:00-18:00</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 SENSELITE. All rights reserved. | Bright up your life</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'senselite-c7h48z',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-s2_xi-L0.js" async></script><script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script></body>
+</html>
+
