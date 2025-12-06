@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18周年大促销 - SENSELITE</title>
+    <link rel="stylesheet" href="css/style-new.css">
+    <meta name="description" content="SENSELITE 18周年豪华大礼，总价值超RM150,000，包含按摩椅、电视、旅游等丰厚奖品">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+                </a>
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <a href="index.html" data-translate="home">首页</a>
+                    <a href="index.html#lighting" data-translate="lighting">灯饰</a>
+                    <a href="promotion.html" data-translate="promotion">18th 周年大促销</a>
+                    <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+                    <a href="about.html" data-translate="about">关于我们</a>
+                    <a href="contact.html" data-translate="contact">联系我们</a>
+                    <a href="support.html" data-translate="support">技术支持</a>
+                    <a href="cart.html" data-translate="cart">购物车</a>
+                    <a href="member.html" data-translate="member">会员</a>
+                </nav>
+            </div>
+            
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageDropdown()">
+                    <span id="currentLanguage">中文</span> ▼
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/diT8DYxRg5Sc.jpg');">
+        <div class="hero-content">
+            <h1>18周年豪华大礼</h1>
+            <p>总价值超 RM150,000 等您来拿</p>
+            <a href="#prizes" class="btn">立即参与</a>
+        </div>
+    </section>
+
+    <!-- Promotion Details Section -->
+    <section class="section" id="promotion-details">
+        <div class="container">
+            <div class="fade-in" style="text-align: center; margin-bottom: 50px;">
+                <h2>庆祝SENSELITE成立18周年</h2>
+                <p style="font-size: 1.2rem; color: var(--dark-gray);">感谢您18年来的支持与信任，我们准备了丰厚的回馈礼品</p>
+            </div>
+            
+            <div class="grid grid-3 fade-in">
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <h3>活动时间</h3>
+                        <p>2024年9月1日 - 2024年12月31日</p>
+                        <p style="color: var(--dark-gray);">为期4个月的超长活动期</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <h3>参与方式</h3>
+                        <p>购买任意产品即可参与抽奖</p>
+                        <p style="color: var(--dark-gray);">消费满RM1000获得1次抽奖机会</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <h3>开奖时间</h3>
+                        <p>每月最后一个周六开奖</p>
+                        <p style="color: var(--dark-gray);">现场直播，公开透明</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section class="section promotion-section" id="prizes">
+        <div class="promotion-bg" style="background-image: url('images/zqah5cYUsinS.jpg');"></div>
+        <div class="container">
+            <div class="promotion-content fade-in">
+                <h2 style="text-align: center; margin-bottom: 50px;">豪华奖品一览</h2>
+                
+                <!-- Grand Prizes -->
+                <div style="margin-bottom: 50px;">
+                    <h3 style="text-align: center; color: var(--primary-black); margin-bottom: 30px;">🏆 特等奖</h3>
+                    <div class="grid grid-2">
+                        <div class="prize-item" style="background: linear-gradient(135deg, #f5f5f5, #ffffff); border: 2px solid var(--silver);">
+                            <h4>欧洲双人游</h4>
+                            <p class="price">价值 RM25,000</p>
+                            <p style="font-size: 0.9rem; color: var(--dark-gray);">包含机票、酒店、签证</p>
+                        </div>
+                        <div class="prize-item" style="background: linear-gradient(135deg, #f5f5f5, #ffffff); border: 2px solid var(--silver);">
+                            <h4>Osim uNano Pro 按摩椅</h4>
+                            <p class="price">RM13,888</p>
+                            <p style="font-size: 0.9rem; color: var(--dark-gray);">顶级按摩体验</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- First Prizes -->
+                <div style="margin-bottom: 50px;">
+                    <h3 style="text-align: center; color: var(--primary-black); margin-bottom: 30px;">🥇 一等奖</h3>
+                    <div class="grid grid-3">
+                        <div class="prize-item">
+                            <h4>Samsung 65寸电视</h4>
+                            <p class="price">RM5,999</p>
+                            <p style="font-size: 0.9rem; color: var(--dark-gray);">4K超高清智能电视</p>
+                        </div>
+                        <div class="prize-item">
+                            <h4>东京之旅</h4>
+                            <p class="price">满 RM30k 免费送</p>
+                            <p style="font-size: 0.9rem; color: var(--dark-gray);">5天4夜精品游</p>
+                        </div>
+                        <div class="prize-item">
+                            <h4>东京之旅</h4>
+                            <p class="price">满 RM50k 免费送</p>
+                            <p style="font-size: 0.9rem; color: var(--dark-gray);">7天6夜豪华游</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Prizes -->
+                <div style="margin-bottom: 50px;">
+                    <h3 style="text-align: center; color: var(--primary-black); margin-bottom: 30px;">🥈 二等奖</h3>
+                    <div class="grid grid-4">
+                        <div class="prize-item">
+                            <h4>Dyson HEPA Purifier</h4>
+                            <p class="price">RM3,199</p>
+                        </div>
+                        <div class="prize-item">
+                            <h4>PlayStation 5</h4>
+                            <p class="price">RM2,999</p>
+                        </div>
+                        <div class="prize-item">
+                            <h4>Dyson Airwrap</h4>
+                            <p class="price">RM2,899</p>
+                        </div>
+                        <div class="prize-item">
+                            <h4>Dyson Airstrait</h4>
+                            <p class="price">RM2,199</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Prizes -->
+                <div style="margin-bottom: 50px;">
+                    <h3 style="text-align: center; color: var(--primary-black); margin-bottom: 30px;">🥉 三等奖</h3>
+                    <div class="grid grid-3">
+                        <div class="prize-item">
+                            <h4>Samsonite 行李箱</h4>
+                            <p class="price">28寸限量版</p>
+                            <p style="font-size: 0.9rem; color: var(--dark-gray);">价值 RM1,500</p>
+                        </div>
+                        <div class="prize-item">
+                            <h4>现金礼券</h4>
+                            <p class="price">RM500 - RM2,000</p>
+                            <p style="font-size: 0.9rem; color: var(--dark-gray);">可用于任意消费</p>
+                        </div>
+                        <div class="prize-item">
+                            <h4>SENSELITE 产品券</h4>
+                            <p class="price">RM300 - RM1,000</p>
+                            <p style="font-size: 0.9rem; color: var(--dark-gray);">专享产品折扣</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section class="section" id="rules">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; margin-bottom: 50px;">活动规则</h2>
+            
+            <div class="grid grid-2 fade-in">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>参与条件</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>✓ 购买任意SENSELITE产品</li>
+                            <li>✓ 消费满RM1,000获得1次抽奖机会</li>
+                            <li>✓ 消费满RM5,000获得3次抽奖机会</li>
+                            <li>✓ 消费满RM10,000获得6次抽奖机会</li>
+                            <li>✓ 消费满RM30,000直接获得东京5天4夜游</li>
+                            <li>✓ 消费满RM50,000直接获得东京7天6夜豪华游</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>抽奖流程</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li>1️⃣ 购买产品后自动获得抽奖号码</li>
+                            <li>2️⃣ 每月最后一个周六进行抽奖</li>
+                            <li>3️⃣ 现场直播，公开透明</li>
+                            <li>4️⃣ 中奖者将收到电话通知</li>
+                            <li>5️⃣ 奖品将在7个工作日内发放</li>
+                            <li>6️⃣ 旅游奖品需提前预约时间</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fade-in" style="text-align: center; margin-top: 40px;">
+                <h3>重要提醒</h3>
+                <p style="color: var(--dark-gray); max-width: 800px; margin: 0 auto;">
+                    本活动最终解释权归SENSELITE所有。奖品不可兑换现金，旅游奖品有效期为一年。
+                    参与活动即表示同意相关条款和条件。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--primary-black); color: var(--primary-white);">
+        <div class="container">
+            <div class="fade-in" style="text-align: center;">
+                <h2 style="color: var(--primary-white);">立即参与，赢取豪礼！</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 30px;">机会难得，不容错过</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="index.html#lighting" class="btn btn-secondary">浏览产品</a>
+                    <a href="index.html#contact" class="btn">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>产品与服务</h4>
+                    <ul>
+                        <li><a href="index.html#lighting">灯饰产品系列</a></li>
+                        <li><a href="promotion.html">18th 周年福利</a></li>
+                        <li><a href="index.html#about">关于我们</a></li>
+                        <li><a href="index.html#contact">门店查询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>装修服务</h4>
+                    <ul>
+                        <li><a href="renovation.html">0% 装修 + 赚钱</a></li>
+                        <li><a href="index.html#styles">10 大最受欢迎风格</a></li>
+                        <li><a href="renovation.html">利润回报计算器</a></li>
+                        <li><a href="promotion.html">福利满满</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="#support">技术支持</a></li>
+                        <li><a href="#support">付款支持</a></li>
+                        <li><a href="#member">会员注册/登录</a></li>
+                        <li><a href="index.html#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SENSELITE. All rights reserved. | Bright up your life</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'senselite-c7h48z',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-s2_xi-L0.js" async></script><script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script></body>
+</html>
+
