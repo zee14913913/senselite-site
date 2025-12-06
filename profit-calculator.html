@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>利润回报计算器 - SENSELITE</title>
+    <link rel="stylesheet" href="css/style-new.css">
+    <meta name="description" content="SENSELITE - 利润回报计算器，专业灯饰设计与装修服务">
+    <meta name="keywords" content="灯饰,装修,照明,设计,SENSELITE,利润回报计算器">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+                </a>
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <a href="index.html" data-translate="home">首页</a>
+                    <a href="index.html#lighting" data-translate="lighting">灯饰</a>
+                    <a href="promotion.html" data-translate="promotion">20th 周年大促销</a>
+                    <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+                    <a href="about.html" data-translate="about">关于我们</a>
+                    <a href="contact.html" data-translate="contact">联系我们</a>
+                    <a href="support.html" data-translate="support">技术支持</a>
+                    <a href="cart.html" data-translate="cart">购物车</a>
+                    <a href="member.html" data-translate="member">会员</a>
+                </nav>
+            </div>
+            
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageDropdown()">
+                    <span id="currentLanguage">中文</span> ▼
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <style>
+    body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        color: #222;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 2.5rem;
+        text-shadow: 0 0 8px rgba(255,255,255,0.6);
+        color: #333;
+        font-weight: bold;
+    }
+    .calculator-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 40px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .form-group {
+        margin-bottom: 25px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+        font-size: 1.1rem;
+    }
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 12px 15px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+        outline: none;
+        border-color: #333;
+    }
+    .calculate-btn {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        transition: background 0.3s;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .calculate-btn:hover {
+        background: #555;
+    }
+    .result-box {
+        margin-top: 30px;
+        padding: 25px;
+        border: 2px solid #333;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    .result-box h3 {
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .result-item {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .result-item:last-child {
+        border-bottom: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+    .highlight {
+        font-size: 1.4em;
+        font-weight: bold;
+        color: #333;
+        text-shadow: 0 0 6px rgba(180,180,180,0.8);
+    }
+    </style>
+
+    <main>
+        <h1>利润回报计算器</h1>
+        <div class="calculator-container">
+            <form id="profitForm">
+                <div class="form-group">
+                    <label for="budget">装修预算 (RM)</label>
+                    <input type="number" id="budget" name="budget" value="50000" min="1000" step="1000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="period">分期期数 (月)</label>
+                    <select id="period" name="period" required>
+                        <option value="12">12个月</option>
+                        <option value="24" selected>24个月</option>
+                        <option value="36">36个月</option>
+                        <option value="48">48个月</option>
+                        <option value="60">60个月</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="return-rate">预期年回报率 (%)</label>
+                    <select id="return-rate" name="return-rate" required>
+                        <option value="8">8%</option>
+                        <option value="10" selected>10%</option>
+                        <option value="12">12%</option>
+                        <option value="15">15%</option>
+                        <option value="18">18%</option>
+                    </select>
+                </div>
+
+                <button type="button" class="calculate-btn" onclick="calculateProfit()">计算利润回报</button>
+            </form>
+
+            <div class="result-box" id="results">
+                <h3>💰 利润回报预测</h3>
+                <div class="result-item">
+                    <span>装修预算:</span>
+                    <span id="result-budget" class="highlight">RM 50,000</span>
+                </div>
+                <div class="result-item">
+                    <span>分期期数:</span>
+                    <span id="result-period">24个月</span>
+                </div>
+                <div class="result-item">
+                    <span>年回报率:</span>
+                    <span id="result-rate">10%</span>
+                </div>
+                <div class="result-item">
+                    <span>预期总利润:</span>
+                    <span id="total-profit" class="highlight">RM 10,000</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
+                <h4 style="color: #856404; margin-bottom: 10px;">💡 温馨提示</h4>
+                <p style="color: #856404; margin: 0; line-height: 1.6;">
+                    此计算器仅供参考，实际回报可能因市场条件而有所不同。建议咨询我们的专业顾问获取详细的投资分析。
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- First Column -->
+                <div class="footer-column">
+                    <h4>产品与服务</h4>
+                    <ul>
+                        <li><a href="index.html#lighting">灯饰产品系列</a></li>
+                        <li><a href="promotion.html">20th 周年福利</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">门店查询</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Second Column -->
+                <div class="footer-column">
+                    <h4>装修服务</h4>
+                    <ul>
+                        <li><a href="renovation.html">0% 装修 + 赚钱</a></li>
+                        <li><a href="index.html#styles">10 大最受欢迎风格</a></li>
+                        <li><a href="profit-calculator.html">利润回报计算器</a></li>
+                        <li><a href="promotion.html">福利满满</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column -->
+                <div class="footer-column">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="support.html">技术支持</a></li>
+                        <li><a href="payment-support.html">付款支持</a></li>
+                        <li><a href="member.html">会员注册/登录</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column -->
+                <div class="footer-column">
+                    <h4>联系信息</h4>
+                    <ul>
+                        <li><a href="tel:+60123456789">电话: +60 12-345 6789</a></li>
+                        <li><a href="mailto:info@senselite.com">邮箱: info@senselite.com</a></li>
+                        <li><a href="#">地址: 吉隆坡市中心</a></li>
+                        <li><a href="#">营业时间: 9:00-18:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SENSELITE. All rights reserved. | Bright up your life</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function calculateProfit() {
+            const budget = parseFloat(document.getElementById('budget').value);
+            const period = parseInt(document.getElementById('period').value);
+            const rate = parseFloat(document.getElementById('return-rate').value);
+            
+            // Calculate profit
+            const annualProfit = budget * (rate / 100);
+            const totalProfit = annualProfit * (period / 12);
+            
+            // Update display
+            document.getElementById('result-budget').textContent = `RM ${budget.toLocaleString()}`;
+            document.getElementById('result-period').textContent = `${period}个月`;
+            document.getElementById('result-rate').textContent = `${rate}%`;
+            document.getElementById('total-profit').textContent = `RM ${Math.round(totalProfit).toLocaleString()}`;
+        }
+        
+        // Initialize calculator
+        document.addEventListener('DOMContentLoaded', function() {
+            calculateProfit();
+        });
+    </script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'senselite-c7h48z',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-s2_xi-L0.js" async></script><script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script></body>
+</html>
