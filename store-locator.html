@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>门店查询 - SENSELITE</title>
+    <link rel="stylesheet" href="css/style-new.css">
+    <meta name="description" content="SENSELITE - 门店查询，专业灯饰设计与装修服务">
+    <meta name="keywords" content="灯饰,装修,照明,设计,SENSELITE,门店查询">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+                </a>
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <a href="index.html" data-translate="home">首页</a>
+                    <a href="index.html#lighting" data-translate="lighting">灯饰</a>
+                    <a href="promotion.html" data-translate="promotion">20th 周年大促销</a>
+                    <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+                    <a href="about.html" data-translate="about">关于我们</a>
+                    <a href="contact.html" data-translate="contact">联系我们</a>
+                    <a href="support.html" data-translate="support">技术支持</a>
+                    <a href="cart.html" data-translate="cart">购物车</a>
+                    <a href="member.html" data-translate="member">会员</a>
+                </nav>
+            </div>
+            
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageDropdown()">
+                    <span id="currentLanguage">中文</span> ▼
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <style>
+    body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 2.5rem;
+        text-shadow: 0 0 8px rgba(255,255,255,0.6);
+        color: #333;
+    }
+    .store-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 40px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .store-section {
+        margin-bottom: 40px;
+        padding: 25px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border-left: 4px solid #333;
+    }
+    .store-section h2 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .store-info {
+        margin: 15px 0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    .store-info strong {
+        color: #333;
+        display: inline-block;
+        width: 80px;
+    }
+    .map {
+        margin: 20px 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .map iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+    }
+    .contact-info {
+        background: #333;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .contact-info h3 {
+        margin-bottom: 15px;
+    }
+    .contact-info p {
+        margin: 8px 0;
+        font-size: 1.1rem;
+    }
+    </style>
+
+    <!-- 门店查询内容 -->
+    <main>
+        <h1>门店查询</h1>
+        <div class="store-container">
+            <section class="store-section">
+                <h2>🏢 旗舰店</h2>
+                <div class="store-info">
+                    <p><strong>📍 地址：</strong>110, Jalan SS21/35, Petaling Jaya, Selangor</p>
+                    <p><strong>📞 电话：</strong><a href="tel:+60377266562" style="color: #333; text-decoration: none;">03-7726 6562</a></p>
+                    <p><strong>🕒 营业时间：</strong>周一至周六 9:00-18:00，周日 10:00-17:00</p>
+                    <p><strong>🚗 停车：</strong>提供免费停车位</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.8158!2d101.6261!3d3.1319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDcnNTQuOCJOIDEwMcKwMzUnMzQuMCJF!5e0!3m2!1sen!2smy!4v1234567890" 
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="store-section">
+                <h2>🏬 分店</h2>
+                <div class="store-info">
+                    <p><strong>📍 地址：</strong>Lot G-12, Mid Valley Megamall, Kuala Lumpur</p>
+                    <p><strong>📞 电话：</strong><a href="tel:+60322874455" style="color: #333; text-decoration: none;">03-2287 4455</a></p>
+                    <p><strong>🕒 营业时间：</strong>每日 10:00-22:00</p>
+                    <p><strong>🛍️ 特色：</strong>商场内展示厅，方便购物体验</p>
+                </div>
+            </section>
+
+            <div class="contact-info">
+                <h3>📞 联系我们</h3>
+                <p>如需预约参观或咨询服务，请提前致电</p>
+                <p><strong>客服热线：+60 12-345 6789</strong></p>
+                <p><strong>邮箱：info@senselite.com</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- First Column -->
+                <div class="footer-column">
+                    <h4>产品与服务</h4>
+                    <ul>
+                        <li><a href="index.html#lighting">灯饰产品系列</a></li>
+                        <li><a href="promotion.html">20th 周年福利</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="store-locator.html">门店查询</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Second Column -->
+                <div class="footer-column">
+                    <h4>装修服务</h4>
+                    <ul>
+                        <li><a href="renovation.html">0% 装修 + 赚钱</a></li>
+                        <li><a href="index.html#styles">10 大最受欢迎风格</a></li>
+                        <li><a href="profit-calculator.html">利润回报计算器</a></li>
+                        <li><a href="promotion.html">福利满满</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column -->
+                <div class="footer-column">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="support.html">技术支持</a></li>
+                        <li><a href="payment-support.html">付款支持</a></li>
+                        <li><a href="member.html">会员注册/登录</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column -->
+                <div class="footer-column">
+                    <h4>联系信息</h4>
+                    <ul>
+                        <li><a href="tel:+60123456789">电话: +60 12-345 6789</a></li>
+                        <li><a href="mailto:info@senselite.com">邮箱: info@senselite.com</a></li>
+                        <li><a href="#">地址: 吉隆坡市中心</a></li>
+                        <li><a href="#">营业时间: 9:00-18:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SENSELITE. All rights reserved. | Bright up your life</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'senselite-c7h48z',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-s2_xi-L0.js" async></script><script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script></body>
+</html>
