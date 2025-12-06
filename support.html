@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>技术支持 - SENSELITE</title>
+    <link rel="stylesheet" href="css/style-new.css">
+    <meta name="description" content="SENSELITE - 技术支持，专业灯饰设计与装修服务">
+    <meta name="keywords" content="灯饰,装修,照明,设计,SENSELITE,技术支持">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/SENSELITE_logo_transparent.png" alt="SENSELITE">
+                </a>
+            </div>
+            
+            <div class="nav-container">
+                <nav>
+                    <a href="index.html" data-translate="home">首页</a>
+                    <a href="lighting-overview.html" data-translate="lighting">灯饰</a>
+                    <a href="promotion.html" data-translate="promotion">20th 周年大促销</a>
+                    <a href="renovation.html" data-translate="renovation">0% 装修 + 赚钱</a>
+                    <a href="about.html" data-translate="about">关于我们</a>
+                    <a href="contact.html" data-translate="contact">联系我们</a>
+                    <a href="support.html" data-translate="support">技术支持</a>
+                    <a href="cart.html" data-translate="cart">购物车</a>
+                    <a href="member.html" data-translate="member">会员</a>
+                </nav>
+            </div>
+            
+            <div class="language-switcher">
+                <button class="language-btn" onclick="toggleLanguageDropdown()">
+                    <span id="currentLanguage">中文</span> ▼
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <a href="#" class="lang-option" onclick="switchLanguage('zh')">中文</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('en')">English</a>
+                    <a href="#" class="lang-option" onclick="switchLanguage('ms')">BM</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <style>
+    body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 2.5rem;
+        text-shadow: 0 0 8px rgba(255,255,255,0.6);
+        color: #333;
+    }
+    .support-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 40px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .support-section {
+        margin-bottom: 40px;
+    }
+    .support-section h2 {
+        color: #333;
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .faq-item {
+        background: #f8f9fa;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .faq-question {
+        background: #333;
+        color: white;
+        padding: 15px 20px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .faq-answer {
+        padding: 20px;
+        line-height: 1.6;
+        color: #555;
+    }
+    .contact-support {
+        background: #333;
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .support-btn {
+        background: white;
+        color: #333;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 6px;
+        margin: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    .support-btn:hover {
+        background: #f0f0f0;
+        transform: translateY(-2px);
+    }
+    </style>
+
+    <main>
+        <h1>技术支持</h1>
+        
+        <div class="support-container">
+            <div class="support-section">
+                <h2>常见问题 FAQ</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">如何选择合适的灯饰？</div>
+                    <div class="faq-answer">
+                        选择灯饰需要考虑空间大小、装修风格、照明需求等因素。我们的专业设计师可以为您提供个性化的照明解决方案。建议您先确定房间的主要功能，然后选择相应的照明类型。
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">灯具安装需要注意什么？</div>
+                    <div class="faq-answer">
+                        灯具安装需要专业电工操作，确保电路安全。安装前请检查电压匹配，确保开关和线路承载能力。我们提供专业安装服务，包含安全检测和质量保证。
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">如何申请0%装修分期？</div>
+                    <div class="faq-answer">
+                        申请0%装修分期需要提供身份证明、收入证明等材料。审核通过后即可享受无息分期付款。详细申请流程请联系我们的客服团队。
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">产品保修政策是什么？</div>
+                    <div class="faq-answer">
+                        我们提供2年质量保证，包含免费维修和更换服务。保修期内如有质量问题，请联系客服安排检修。人为损坏不在保修范围内。
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-section">
+                <h2>服务支持</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                        <h3>🔧 安装服务</h3>
+                        <p>专业团队上门安装，确保安全可靠</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                        <h3>🛠️ 维修服务</h3>
+                        <p>快速响应，专业维修，质量保证</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                        <h3>💡 设计咨询</h3>
+                        <p>免费设计咨询，个性化照明方案</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                        <h3>📞 客服热线</h3>
+                        <p>7×24小时客服支持，随时为您服务</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-support">
+                <h2>联系技术支持</h2>
+                <p>如果您有任何技术问题或需要帮助，请通过以下方式联系我们：</p>
+                <div style="margin: 20px 0;">
+                    <button class="support-btn">📞 电话支持: +60 12-345 6791</button>
+                    <button class="support-btn">📧 邮件支持: support@senselite.com</button>
+                    <button class="support-btn">💬 在线客服</button>
+                </div>
+                <p>工作时间：周一至周六 9:00-18:00</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- First Column -->
+                <div class="footer-column">
+                    <h4>产品与服务</h4>
+                    <ul>
+                        <li><a href="index.html#lighting">灯饰产品系列</a></li>
+                        <li><a href="promotion.html">20th 周年福利</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">门店查询</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Second Column -->
+                <div class="footer-column">
+                    <h4>装修服务</h4>
+                    <ul>
+                        <li><a href="renovation.html">0% 装修 + 赚钱</a></li>
+                        <li><a href="index.html#styles">10 大最受欢迎风格</a></li>
+                        <li><a href="renovation.html">利润回报计算器</a></li>
+                        <li><a href="promotion.html">福利满满</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Third Column -->
+                <div class="footer-column">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="support.html">技术支持</a></li>
+                        <li><a href="support.html">付款支持</a></li>
+                        <li><a href="member.html">会员注册/登录</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column -->
+                <div class="footer-column">
+                    <h4>联系信息</h4>
+                    <ul>
+                        <li><a href="tel:+60123456789">电话: +60 12-345 6789</a></li>
+                        <li><a href="mailto:info@senselite.com">邮箱: info@senselite.com</a></li>
+                        <li><a href="#">地址: 吉隆坡市中心</a></li>
+                        <li><a href="#">营业时间: 9:00-18:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SENSELITE. All rights reserved. | Bright up your life</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'senselite-c7h48z',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-s2_xi-L0.js" async></script><script
+			defer
+			data-domain="manus.space"
+			src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"
+		></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script></body>
+</html>
